@@ -11,13 +11,9 @@ const Image = ({ src, alt, className = '' }: ImageProps) => {
   // Handle external URLs vs local images
   const isExternal = src.startsWith('http');
   
-  // For GitHub Pages deployment, adjust the path if it's a local image
-  let imagePath = src;
-  if (!isExternal && import.meta.env.MODE === "production") {
-    // If deployed to GitHub Pages, add the repository name to the path
-    // This assumes deployment to username.github.io/Shuaib_Portfolio
-    imagePath = `/Shuaib_Portfolio${src}`;
-  }
+  // For Vercel deployment, no need to adjust paths as it uses the public folder directly
+  // Just ensure we're using the correct path format
+  const imagePath = src;
   
   return (
     <img

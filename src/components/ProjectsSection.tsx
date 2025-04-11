@@ -51,14 +51,11 @@ const ProjectCard = ({ title, description, image, tags, githubUrl, liveUrl }: Pr
 );
 
 const ProjectsSection = () => {
-  // Adjust paths for GitHub Pages deployment
-  const baseUrl = import.meta.env.MODE === "production" ? "/Shuaib_Portfolio" : "";
-
   const projects = [
     {
       title: 'BravTech',
       description: 'A website for a phone and laptop repair technician offering professional repair services.',
-      image: `${baseUrl}/src/components/assets/btech.png`,
+      image: '/src/components/assets/btech.png',
       tags: ['HTML', 'CSS', 'JavaScript', 'Sass'],
       githubUrl: 'https://github.com/ShuaibShaban/BravTech',
       liveUrl: 'https://bravtech.vercel.app'
@@ -66,7 +63,7 @@ const ProjectsSection = () => {
     {
       title: 'Cocktails App',
       description: 'A website about cocktails where you can explore different drinks, see their ingredients, and learn methods of preparation.',
-      image: `${baseUrl}/src/components/assets/drinks finder.png`,
+      image: '/src/components/assets/drinks finder.png',
       tags: ['HTML', 'CSS', 'JavaScript', 'API Integration'],
       githubUrl: 'https://github.com/ShuaibShaban/Cocktails-App',
       liveUrl: 'https://phase-1-final-project.vercel.app'
@@ -74,7 +71,7 @@ const ProjectsSection = () => {
     {
       title: 'Portfolio Website',
       description: 'A professional portfolio website showcasing projects and skills with a modern, responsive design.',
-      image: `${baseUrl}/src/components/assets/portfolio.png`,
+      image: '/src/components/assets/portfolio.png',
       tags: ['React Vite', 'Tailwind CSS', 'Typescript', 'ShadcnUi'],
       githubUrl: 'https://github.com',
       liveUrl: 'https://example.com'
@@ -82,7 +79,7 @@ const ProjectsSection = () => {
     {
       title: 'Petify',
       description: 'A website about animals, specifically dogs and cats. People looking for pets can use this platform to choose the different pets they would want to adopt.',
-      image: `${baseUrl}/src/components/assets/petify.png`,
+      image: '/src/components/assets/petify.png',
       tags: ['Reactjs', 'API Intergration', 'Tailwindcss'],
       githubUrl: 'https://github.com/ShuaibShaban/Shuaib_Portfolio',
     },

@@ -5,9 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 const ResumeSection = () => {
-  // For GitHub Pages deployment, we need to use relative paths that work both locally and when deployed
-  const baseUrl = import.meta.env.MODE === "production" ? "/Shuaib_Portfolio" : "";
-  const resumePath = `${baseUrl}/src/components/resume/Shuaib_Resume.pdf`;
+  // Use a direct path to the resume
+  const resumePath = '/src/components/resume/Shuaib_Resume.pdf';
   
   return (
     <section className="section-padding bg-navy text-white">
