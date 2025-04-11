@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 201 85% 48%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 199 89% 48%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 201 85% 48%;
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-semibold;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+  
+  .container-custom {
+    @apply container px-4 sm:px-6 mx-auto;
+  }
+}
+
+.skill-card {
+  @apply p-6 bg-white rounded-lg shadow-md transition-all hover:shadow-lg hover:-translate-y-1 border border-border;
+}
+
+.project-card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden transition-all hover:shadow-lg border border-border;
+}
+
+.btn-primary {
+  @apply bg-primary text-white px-6 py-3 rounded-md font-medium transition-colors hover:bg-blue-dark;
+}
+
+.btn-outline {
+  @apply border border-primary text-primary px-6 py-3 rounded-md font-medium transition-colors hover:bg-blue-light hover:text-blue-dark;
+}
+
+.nav-link {
+  @apply text-slate-dark hover:text-primary transition-colors font-medium;
+}
+
+/* Skills Section Specific Styles */
+.bg-grid-pattern {
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle, #3b82f6 1px, transparent 1px);
+}
+
+.skills-container {
+  @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 my-6;
+}
+
+.tech-skill-card {
+  @apply flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-sm transition-all duration-500;
+  @apply hover:shadow-md hover:scale-105 cursor-pointer;
+}
+
+.tech-skill-image {
+  @apply flex items-center justify-center h-20 w-20 rounded-lg bg-white p-2;
+  @apply border border-slate-light transition-all duration-300;
+}
+
+.tech-skill-card:hover .tech-skill-image {
+  @apply shadow-lg border-primary transform scale-110;
+}
+
+.animate-skill-appear {
+  animation: skill-appear 0.8s cubic-bezier(0.3, 0.7, 0.4, 1.5) forwards;
+  animation-delay: calc(var(--delay, 0) * 100ms);
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(14, 165, 233, 0.3);
+}
+
+.animate-section-appear {
+  animation: section-appear 0.8s ease-out forwards;
+}
+
+@keyframes skill-appear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes section-appear {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Add unique animation for the section title */
+@keyframes highlight-sweep {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
