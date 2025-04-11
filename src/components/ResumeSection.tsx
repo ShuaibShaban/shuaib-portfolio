@@ -1,9 +1,14 @@
+
 import React from "react";
 import { Download, FileText, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 const ResumeSection = () => {
+  // For GitHub Pages deployment, we need to use relative paths that work both locally and when deployed
+  const baseUrl = import.meta.env.MODE === "production" ? "/Shuaib_Portfolio" : "";
+  const resumePath = `${baseUrl}/src/components/resume/Shuaib_Resume.pdf`;
+  
   return (
     <section className="section-padding bg-navy text-white">
       <div className="container-custom">
@@ -19,10 +24,10 @@ const ResumeSection = () => {
             <Button className="bg-primary hover:bg-blue-dark text-white mt-4 flex items-center gap-2">
               <Download size={16} />
               <a
-                href="src/components/resume/Shuaib_Resume.pdf"
+                href={resumePath}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-primary hover:bg-blue-dark text-white px-4 py-2 rounded-md transition-colors"
+                className="inline-flex items-center gap-2"
               >
                 View Resume
               </a>
