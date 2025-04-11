@@ -55,7 +55,7 @@ const ProjectsSection = () => {
     {
       title: 'BravTech',
       description: 'A website for a phone and laptop repair technician offering professional repair services.',
-      image: '/src/components/assets/btech.png',
+      image: '/public/lovable-uploads/btech.png',
       tags: ['HTML', 'CSS', 'JavaScript', 'Sass'],
       githubUrl: 'https://github.com/ShuaibShaban/BravTech',
       liveUrl: 'https://bravtech.vercel.app'
@@ -63,7 +63,7 @@ const ProjectsSection = () => {
     {
       title: 'Cocktails App',
       description: 'A website about cocktails where you can explore different drinks, see their ingredients, and learn methods of preparation.',
-      image: '/src/components/assets/drinks finder.png',
+      image: '/public/lovable-uploads/drinks finder.png',
       tags: ['HTML', 'CSS', 'JavaScript', 'API Integration'],
       githubUrl: 'https://github.com/ShuaibShaban/Cocktails-App',
       liveUrl: 'https://phase-1-final-project.vercel.app'
@@ -71,7 +71,7 @@ const ProjectsSection = () => {
     {
       title: 'Portfolio Website',
       description: 'A professional portfolio website showcasing projects and skills with a modern, responsive design.',
-      image: '/src/components/assets/portfolio.png',
+      image: '/public/lovable-uploads/portfolio.png',
       tags: ['React Vite', 'Tailwind CSS', 'Typescript', 'ShadcnUi'],
       githubUrl: 'https://github.com',
       liveUrl: 'https://example.com'
@@ -79,7 +79,7 @@ const ProjectsSection = () => {
     {
       title: 'Petify',
       description: 'A website about animals, specifically dogs and cats. People looking for pets can use this platform to choose the different pets they would want to adopt.',
-      image: '/src/components/assets/petify.png',
+      image: '/public/lovable-uploads/petify.png',
       tags: ['Reactjs', 'API Intergration', 'Tailwindcss'],
       githubUrl: 'https://github.com/ShuaibShaban/Shuaib_Portfolio',
     },

@@ -1,27 +1,27 @@
 
 export const frontendSkills = [
-  { name: 'Bootstrap', image: '/src/components/assets/bootstrap.png' },
-  { name: 'CSS3', image: '/src/components/assets/css.png' },
-  { name: 'Figma', image: '/src/components/assets/figma.png' },
-  { name: 'Git', image: '/src/components/assets/git.png' },
-  { name: 'HTML5', image: '/src/components/assets/html.png' },
-  { name: 'JavaScript', image: '/src/components/assets/javascript.png' },
-  { name: 'Next.js', image: '/src/components/assets/next.webp' },
-  { name: 'React', image: '/src/components/assets/react.png' },
-  { name: 'Redux', image: '/src/components/assets/redux.png' },
-  { name: 'Sass', image: '/src/components/assets/sass.png' },
-  { name: 'WordPress', image: '/src/components/assets/wordpress.png' },
+  { name: 'Bootstrap', image: '/public/lovable-uploads/bootstrap.png' },
+  { name: 'CSS3', image: '/public/lovable-uploads/css.png' },
+  { name: 'Figma', image: '/public/lovable-uploads/figma.png' },
+  { name: 'Git', image: '/public/lovable-uploads/git.png' },
+  { name: 'HTML5', image: '/public/lovable-uploads/html.png' },
+  { name: 'JavaScript', image: '/public/lovable-uploads/javascript.png' },
+  { name: 'Next.js', image: '/public/lovable-uploads/next.webp' },
+  { name: 'React', image: '/public/lovable-uploads/react.png' },
+  { name: 'Redux', image: '/public/lovable-uploads/redux.png' },
+  { name: 'Sass', image: '/public/lovable-uploads/sass.png' },
+  { name: 'WordPress', image: '/public/lovable-uploads/wordpress.png' },
 ];
 
 export const backendSkills = [
-  { name: 'Ruby', image: '/src/components/assets/ruby.png' },
-  { name: 'Rails', image: '/src/components/assets/rails.png' },
+  { name: 'Ruby', image: '/public/lovable-uploads/ruby.png' },
+  { name: 'Rails', image: '/public/lovable-uploads/rails.png' },
 ];
 
 export const designTools = [
-  { name: 'Figma', image: '/src/components/assets/figma.png' },
-  { name: 'Adobe Photoshop', image: '/src/components/assets/illustrator.png' },
-  { name: 'Adobe Photoshop', image: '/src/components/assets/photoshop.png' },
+  { name: 'Figma', image: '/public/lovable-uploads/figma.png' },
+  { name: 'Adobe Photoshop', image: '/public/lovable-uploads/illustrator.png' },
+  { name: 'Adobe Photoshop', image: '/public/lovable-uploads/photoshop.png' },
 ];
 
 export const skillDescriptions = {
