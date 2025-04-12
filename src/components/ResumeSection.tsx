@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const ResumeSection = () => {
   // Use a direct path to the resume
-  const resumePath = '/src/components/resume/Shuaib_Resume.pdf';
+  const resumePath = './src/components/resume/Shuaib_Resume.pdf';
   
   return (
     <section className="section-padding bg-navy text-white">
