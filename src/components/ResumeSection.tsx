@@ -3,10 +3,9 @@ import React from "react";
 import { Download, FileText, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+// import resumePath from "";
 
 const ResumeSection = () => {
-  // Use a direct path to the resume
-  const resumePath = './src/components/resume/Shuaib_Resume.pdf';
   
   return (
     <section className="section-padding bg-navy text-white">
@@ -23,7 +22,7 @@ const ResumeSection = () => {
             <Button className="bg-primary hover:bg-blue-dark text-white mt-4 flex items-center gap-2">
               <Download size={16} />
               <a
-                href={resumePath}
+                href="/public/lovable-uploads/Shuaib_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2"

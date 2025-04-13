@@ -1,36 +1,26 @@
-
-// Helper function to get correct path for assets
-const getAssetPath = (path: string) => {
-  // If it's already an external URL, return as is
-  if (path.startsWith('http')) return path;
-  
-  // For Vercel deployment, use paths relative to the public folder
-  return path;
-};
-
 export const frontendSkills = [
-  { name: 'Bootstrap', image: './src/components/assets/bootstrap.png' },
-  { name: 'CSS3', image: './src/components/assets/css.png' },
-  { name: 'Figma', image: './src/components/assets/figma.png' },
-  { name: 'Git', image: './src/components/assets/git.png' },
-  { name: 'HTML5', image: './src/components/assets/html.png' },
-  { name: 'JavaScript', image: './src/components/assets/javascript.png' },
-  { name: 'Next.js', image: './src/components/assets/next.webp' },
-  { name: 'React', image: './src/components/assets/react.png' },
-  { name: 'Redux', image: './src/components/assets/redux.png' },
-  { name: 'Sass', image: './src/components/assets/sass.png' },
-  { name: 'WordPress', image: './src/components/assets/wordpress.png' },
+  { name: 'Bootstrap', image: '/lovable-uploads/bootstrap.png' },
+  { name: 'CSS3', image: '/lovable-uploads/css.png' },
+  { name: 'Figma', image: '/lovable-uploads//figma.png' },
+  { name: 'Git', image: '/lovable-uploads//git.png' },
+  { name: 'HTML5', image: '/lovable-uploads/html.png' },
+  { name: 'JavaScript', image: '/lovable-uploads/javascript.png' },
+  { name: 'Next.js', image: '/lovable-uploads/next.webp' },
+  { name: 'React', image: '/lovable-uploads/react.png' },
+  { name: 'Redux', image: '/lovable-uploads/redux.png' },
+  { name: 'Sass', image: '/lovable-uploads/sass.png' },
+  { name: 'WordPress', image: '/lovable-uploads/wordpress.png' },
 ];
 
 export const backendSkills = [
-  { name: 'Ruby', image: './src/components/assets/ruby.png' },
-  { name: 'Rails', image: './src/components/assets/rails.png' },
+  { name: 'Ruby', image: '/lovable-uploads/ruby.png' },
+  { name: 'Rails', image: '/lovable-uploads/rails.png' },
 ];
 
 export const designTools = [
-  { name: 'Figma', image: './src/components/assets/figma.png' },
-  { name: 'Adobe Illustrator', image: './src/components/assets/illustrator.png' },
-  { name: 'Adobe Photoshop', image: './src/components/assets/photoshop.png' },
+  { name: 'Figma', image: '/lovable-uploads/figma.png' },
+  { name: 'Adobe Illustrator', image: '/lovable-uploads/illustrator.png' },
+  { name: 'Adobe Photoshop', image: '/lovable-uploads/photoshop.png' },
 ];
 
 export const skillDescriptions = {
