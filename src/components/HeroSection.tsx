@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { ArrowDownCircle, Github, Linkedin, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import { Typewriter } from 'react-simple-typewriter';
 
 const HeroSection = () => {
   return (
@@ -12,7 +12,17 @@ const HeroSection = () => {
           <div className="space-y-6 animate-fade-in">
             <p className="text-primary font-medium">Hello, I'm a</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight">
-              Web Developer & <br />Aspiring Graphic Designer
+              <span className="text-primary">
+                <Typewriter
+                  words={['Web Developer', 'Aspiring Graphic Designer']}
+                  loop={true}
+                  cursor
+                  cursorStyle="_"
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1500}
+                />
+              </span>
             </h1>
             <p className="text-slate text-lg max-w-md">
               I create stunning digital experiences that combine beautiful design with powerful functionality.
@@ -63,4 +73,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
