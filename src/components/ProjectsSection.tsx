@@ -81,7 +81,8 @@ const ProjectsSection = () => {
       description: 'A website about animals, specifically dogs and cats. People looking for pets can use this platform to choose the different pets they would want to adopt.',
       image: '/lovable-uploads/petify.png',
       tags: ['Reactjs', 'API Intergration', 'Tailwindcss'],
-      githubUrl: 'https://github.com/ShuaibShaban/Shuaib_Portfolio',
+      githubUrl: 'https://github.com/ShuaibShaban/Petflix',
+      liveUrl: 'https://relaxed-swan-675437.netlify.app',
     },
   ];
 
